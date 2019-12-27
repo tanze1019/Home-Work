@@ -1,0 +1,85 @@
+.page-home{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    section{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background: #cccccc;
+        overflow: auto;
+
+        .home-banner{
+            width: 100%;
+            height: auto;
+        }
+        .swiper-container{
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding-bottom: .5rem;
+            background: white;
+            .swiper-wrapper{
+                width: 100%;
+                height: auto;
+                .swiper-slide{
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    dl{
+                        flex: none;
+                        width: 20%;
+                        text-align: center;
+                        dt{
+                           padding: .1rem;
+                           box-sizing: border-box;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            img{
+                                width: .8rem;
+                                height: auto;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .swiper-pagination-bullet-active{
+                background: orangered;
+            }
+            .swiper-pagination{
+                bottom: 0;
+            }
+        }
+        .main{
+            flex: 1;
+            margin-top: 10px;
+            background: white;
+
+            >h1{
+                width: 100%;
+                height: .8rem;
+                line-height: .8rem;
+                font-size: .32rem;
+                padding-left: .3rem;
+                box-sizing: border-box;
+                position: relative;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    background: #cccccc;
+                    bottom: 0;
+                    transform: scaleY(0.5);
+                    left: 0;
+                }
+            }
+        }
+    }
+}
