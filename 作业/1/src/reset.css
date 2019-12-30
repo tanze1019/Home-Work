@@ -1,0 +1,57 @@
+
+@charset "utf-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0 }
+body, button, input, select, textarea {font:.24rem/1.5 "\5FAE\8F6F\96C5\9ED1", arial ; *line-height:1.5}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight: normal;}
+address, cite, dfn, em, var {font-style:normal;}
+code, kbd, pre, samp {font-family:courier new, courier, monospace;}
+
+ul, ol {list-style:none;}
+fieldset, img {border:0}
+table {border-collapse:collapse;border-spacing:0;}
+input, button, textarea, select, optgroup, option {font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;font-size:100%;}
+/****/
+abbr, article, aside, audio, canvas, datalist, details, figure, footer, header, hgroup, menu, nav, output, progress, section, video {display:block;margin:0;padding:0}
+i,u,b,em,span,small{ font-weight:normal; font-style:normal;}
+html,body {height: 100%}
+/****/
+html {font-size: 62.5%;}
+body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+}
+a{text-decoration: none;color:#666;}
+a:hover{color:#f00;}
+h2{ margin:0; padding: 0;}
+ul{word-spacing: -4px;}
+input[type=range] {
+    display: inline-block;
+    width:100%;
+    height: 0.1rem;
+    position: relative;
+    left: 0px;
+     -webkit-appearance: none;
+    border-radius: 10px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    height: 0.12rem;
+    border-radius: 10px; /*将轨道设为圆角的*/
+    box-shadow: 0 1px 1px #def3f8; /*轨道内置阴影效果*/
+    background: -webkit-linear-gradient(#059CFA, #059CFA) no-repeat;
+	background-size: 0% 100%;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 0.2rem;
+    width: 0.2rem;
+    margin-top: -2px; /*使滑块超出轨道部分的偏移量相等*/
+    background: #ffffff; 
+    border-radius: 50%; /*外观设置为圆形*/
+    border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+} 
